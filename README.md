@@ -17,7 +17,9 @@ Frontend apps
 
 ## Why choose React as a frontend solution
 
+## IDE
 
+The IDE we will use is `Visual Studio Code`
 
 ## Prerequisites
 

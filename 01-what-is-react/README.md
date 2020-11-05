@@ -14,9 +14,21 @@ In this lesson we will get a basic understanding about what React's job is.
 - JSX
 - Components
 
-## EX.
+## when learning react
 
-## EX
+- React core
+- Platform specific rules
+
+- React core
+- react native
+
+- React core
+- react-dom
+
+- React core
+- Electron
+
+## EX.
 
 - Create the following login page
 
