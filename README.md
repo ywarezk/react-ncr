@@ -8,6 +8,17 @@ The lecture videos will be uploaded to this playlist:
 
 <https://www.youtube.com/playlist?list=PLnHa2cF4cNDvLwx4nZjnk33NnxbCSlK5G>
 
+## What you can create with React
+
+Frontend apps
+- websites
+- Mobile apps
+- Desktop apps
+
+## Why choose React as a frontend solution
+
+
+
 ## Prerequisites
 
 - Javascript ES6+
@@ -38,3 +49,8 @@ In this lesson we will have a basic introduction, and we will understand what is
 With React we create UI components.  
 JSX helps us describe how our components look like.  
 In this lesson we will go over the rules of JSX.
+
+3. Typescript
+
+We will learn to develop React using Typescript.  
+In this lesson we will go over basic typescript lesson.
