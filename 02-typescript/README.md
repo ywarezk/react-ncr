@@ -54,3 +54,14 @@ node get-from-server.js
 ```
 
 - the result of running the file should be the response data printed to `console.log`
+
+## Solution
+
+```bash
+npm init --yes
+npm install axios
+npm install ts-node
+npm install typescript -D 
+npx tsc --init
+npx ts-node get-from-server.ts
+```
