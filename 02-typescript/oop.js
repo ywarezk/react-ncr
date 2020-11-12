@@ -1,7 +1,14 @@
 "use strict";
+// var self = this
 var Person = /** @class */ (function () {
     function Person() {
+        var _this = this;
+        this.age = 35;
         this._secret = 'my password';
+        this.birthday2 = function () {
+            console.log(_this);
+            _this.age++;
+        };
     }
     Person.hello = function () {
         console.log('hello world');
