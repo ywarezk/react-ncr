@@ -14,6 +14,18 @@ npx create-react-app <project-name> --template typescript
 npm start
 ```
 
+## See the webpack configs
+
+```
+npm run eject
+```
+
+## Build and deploy
+
+```
+npm run build
+```
+
 ## Lesson Plan
 
 - Creating a new project
