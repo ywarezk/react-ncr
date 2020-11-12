@@ -8,11 +8,34 @@ import axios, { AxiosResponse } from 'axios';
 
 // const axios = require('axios').default;
 
-axios.get('https://nztodo.herokuapp.com/api/tasks/?format=json')
+const requestPromise: Promise<AxiosResponse> = axios.get('https://nztodo.herokuapp.com/api/tasks/?format=json')
 
-// .then(
-// 	function (res: AxiosResponse) {
-// 		const data = res.data;
-// 		console.log(data);
-// 	}
-// );
+requestPromise.then(
+	function (res: AxiosResponse) {
+		const data = res.data;
+		console.log(data);
+	}
+);
+
+/**
+ * @returns {Promise<string>}
+ */
+async function getFromServer(): Promise<string> {
+	try {
+		const response = await axios.get('https://nztodo.herokuapp.com/api/tasks/?format=json');	
+		// await promise2;
+		// await promise3;
+		console.log(response.data);
+	} catch(err) {
+		console.log(`request failed ${err.message}`);
+	}
+	
+	
+	return 'Pigletshvily';
+}
+
+getFromServer().then(
+	function(dogName) {
+	
+	}
+)
