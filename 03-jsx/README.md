@@ -43,6 +43,10 @@ React has to on scope
 
 6. no reserved words
 
+7. to place js we create { typescript code }
+
+8. class => className, for => htmlFor
+
 ## tsconfig.json
 
 ```
