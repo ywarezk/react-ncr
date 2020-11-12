@@ -2,6 +2,57 @@
 
 In this lessons we will learn additional rules about JSX
 
+```
+React.createElement(...)
+
+function Header(){
+	return (
+		<header>
+			<h1>this is the header</h1>
+			<img src="..." />
+		</header>
+	)
+}
+```
+
+
+## JSX Rules
+
+1. jsx is translated to 
+```
+React.createElement
+```
+
+React has to on scope
+
+2. file extension should end with `.tsx`
+
+3. one wrapper
+
+4. When using your component use capital letter, when using dom objects use lowercase
+
+```
+<Header />
+<header></header>
+```
+
+5. comments syntax
+```
+{/* some comment */}
+```
+
+6. no reserved words
+
+## tsconfig.json
+
+```
+npx tsc --init
+```
+
+```
+"jsx": "react"
+```
+
 ## Lesson Plan
 
 - What is JSX

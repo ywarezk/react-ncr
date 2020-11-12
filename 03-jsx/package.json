@@ -1,0 +1,19 @@
+{
+  "name": "03-jsx",
+  "version": "1.0.0",
+  "description": "In this lessons we will learn additional rules about JSX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.9.56",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "react": "^17.0.1"
+  }
+}
