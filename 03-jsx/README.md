@@ -21,6 +21,8 @@ function Header(){
 1. jsx is translated to 
 ```
 React.createElement
+
+import React from 'react';
 ```
 
 React has to on scope
@@ -28,6 +30,13 @@ React has to on scope
 2. file extension should end with `.tsx`
 
 3. one wrapper
+
+```
+<>
+	<h1>adsfa</h1>
+	<h2>adsfa</h2>
+</>
+```
 
 4. When using your component use capital letter, when using dom objects use lowercase
 
@@ -42,10 +51,11 @@ React has to on scope
 ```
 
 6. no reserved words
+class => className, for => htmlFor
 
 7. to place js we create { typescript code }
-
-8. class => className, for => htmlFor
+- attribute
+- between tags
 
 ## tsconfig.json
 

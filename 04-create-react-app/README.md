@@ -8,6 +8,12 @@ We will use `create-react-app` to bootstrap a new React application.
 npx create-react-app <project-name> --template typescript
 ```
 
+## Start developing
+
+```
+npm start
+```
+
 ## Lesson Plan
 
 - Creating a new project
