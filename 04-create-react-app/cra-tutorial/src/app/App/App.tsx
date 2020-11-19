@@ -1,17 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Header } from './Header';
+import { Header } from './Header/Header';
 
-function App() {
+export function App() {
 	return (
 		<div className="App">
 			<Header />
 
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
+				{/* <img src="logo192.png" /> */}
 				<p>
-					 <code>src/App.tsx</code> and save to reload.
+					 hello world
        			 </p>
 				<a
 					className="App-link"
@@ -25,5 +26,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;

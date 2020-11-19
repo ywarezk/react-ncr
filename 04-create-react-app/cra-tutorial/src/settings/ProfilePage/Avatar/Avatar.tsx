@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function Header() {
+export function Avatar() {
 	return (
 		<h1>
-			I'm the header
+			Please edit your profile
 		</h1>
 	)
 }
