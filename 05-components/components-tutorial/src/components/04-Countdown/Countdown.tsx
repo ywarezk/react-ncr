@@ -65,7 +65,7 @@ export const Countdown: FC<{name: string, destroyCb: () => void}> = ({name, dest
 	}, [counter, destroyCb])
 	
 	return (
-		<div>
+		<div className="countdown">
 			<h1>{counter}</h1>
 			<button onClick={decrementCounter}>
 				Decrement
