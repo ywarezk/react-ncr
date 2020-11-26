@@ -1,5 +1,7 @@
 /**
  * that displays hello world on the screen
+ 
+ <CustomHelloWorld name="Pigletshvily" type={'Dog'} age={7} />
  */
  
 import React, { FC } from 'react';

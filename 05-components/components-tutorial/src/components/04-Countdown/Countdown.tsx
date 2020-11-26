@@ -10,7 +10,7 @@ setInterval(() => {
 }, 1000)
 */
 
-export const Countdown: FC<{name: string}> = ({name}) => {
+export const Countdown: FC<{name: string, destroyCb: () => void}> = ({name, destroyCb}) => {
 	// do not wrap the hooks with if, for
 	// if (){useState}
 	const [counter, setCounter] = useState(5);
@@ -27,14 +27,19 @@ export const Countdown: FC<{name: string}> = ({name}) => {
 	const [isZogi, setIsZogi] = useState(false);
 	
 	// call the function after the render
-	useEffect(() => {
-		setInterval(() => {
+	useEffect(function ofTheUseEffect() {
+		
+		const intervalId = setInterval(function ofTheInterval() {
 			// console.log('setInterval:' + counter);
 			// setCounter(counter - 1)
-			setCounter((currentCounter) => {
+			setCounter(function toSetTheNewState(currentCounter) {
 				return currentCounter - 1;
 			})
-		}, 1000)
+		}, 1000);
+		
+		return function cleanTheUseEffect() {
+			clearInterval(intervalId);
+		}
 	}, [])
 	
 	const decrementCounter = () => {
@@ -43,13 +48,21 @@ export const Countdown: FC<{name: string}> = ({name}) => {
 		})
 	}
 	
+	// zogi
 	useEffect(() => {
 		if (counter % 2 === 0) {
 			setIsZogi(true);
 		} else {
 			setIsZogi(false);
 		}
-	}, [counter])
+	}, [counter,/* someState, someProps */])
+	
+	// check if i need to destroy myself
+	useEffect(() => {
+		if (counter !== 0) return;
+		
+		destroyCb();
+	}, [counter, destroyCb])
 	
 	return (
 		<div>

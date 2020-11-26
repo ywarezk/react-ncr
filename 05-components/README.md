@@ -10,6 +10,21 @@ In this lesson we will drill down and focus on the tools react gives us for crea
 - State
 - Lifecycle hooks
 
+## Summary
+
+```
+npx create-react-app <project-name> --template typescript
+```
+
+```
+npm start
+```
+
+- Every component can get props to customize the behaviour of the component
+- Every component can manage a private state and draw something dynamic based on that state
+and also change the state when some action happens
+
+
 ## EX communicating with a server
 
 In most of the websites you will create with React you will have a backend server that you will need to communicate with.  
