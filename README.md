@@ -84,3 +84,7 @@ These are the libraries that im using:
 
 - https://johnbryce.zoom.us/rec/share/8b86FfukgKfYPdAEa7dW8gU8ip0XOjldRS6Z4k8W2uVPq1XuLWu8gMvbs6-MBoiW.zzjkrUDb_lRdUQ27
 
+- Recording from December 3rd, 2020
+
+https://johnbryce.zoom.us/rec/share/2I9EoiOqAbTZLCtFNkrwVO1_P1yMOp8y0HQUP8BuZzivt-VlZCqeUU3Eqmkhv01e.OQfuYBdU0sKFhH50
+
