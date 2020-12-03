@@ -8,18 +8,16 @@ send them to a server
 
  */
  
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
 import { Form, Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { JwtContext } from './jwt.context';
 
 interface LoginValues {
 	email: string;
 	password: string;
 }
 
-interface LoginProps {
-	cb: (toke: string) => void;
-}
 
 const LoginSchema = Yup.object().shape({
 	email: Yup.string()
@@ -30,7 +28,8 @@ const LoginSchema = Yup.object().shape({
 	password: Yup.string().required('Required').min(2, 'too short').max(100, 'too long'),
 });
 
-export const Login: FC<LoginProps> = ( {cb} ) => {
+export const Login: FC = ( ) => {
+	const { setToken } = useContext(JwtContext);
 	
 	/**
 	 * Formik will call it when you submit the form
@@ -54,7 +53,7 @@ export const Login: FC<LoginProps> = ( {cb} ) => {
 		)
 		const json = await response.json();
 		// {token: 'asdfasdf@2423423rSFasfdasf'}
-		cb(json.token);
+		setToken(json.token);
 		console.log(json);
 	}
 	
@@ -65,6 +64,8 @@ export const Login: FC<LoginProps> = ( {cb} ) => {
 			validationSchema={LoginSchema}
 		>
 			<Form>
+				<h1>
+				</h1>
 				<Field type="email" name="email" placeholder="Enter your mail" />
 				<ErrorMessage name="email" />
 				<Field type="password" name="password" placeholder="Enter your password" />

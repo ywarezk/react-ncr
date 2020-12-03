@@ -61,3 +61,26 @@ In this lesson we will go over basic typescript lesson.
 11111111
 
 2222222
+
+## Recommended React / JS libraries
+
+These are the libraries that im using:
+
+- React
+- Redux + Redux toolkit / Mobx
+- @apollo/client - GraphQL
+- NextJS - React framework
+- Formik / react-hook-forms
+- Bootstrap
+- react-router
+- Yup
+- react-i18n
+- react material design - https://material-ui.com/
+- primereact - https://www.primefaces.org/primereact/
+- react-select
+
+
+## Video Lectures
+
+- https://johnbryce.zoom.us/rec/share/8b86FfukgKfYPdAEa7dW8gU8ip0XOjldRS6Z4k8W2uVPq1XuLWu8gMvbs6-MBoiW.zzjkrUDb_lRdUQ27
+
