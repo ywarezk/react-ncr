@@ -72,3 +72,44 @@ fetch('https://academeez-login-ex.herokuapp.com/api/tasks', {
 ```
 - the server will only return the data upon a valid jwt token
 
+## EX.
+
+In this EX. you will practice using context.  
+Context can be used to share information between components.  
+In this EX. you will create a "Video Player" that is made from 2 components.  
+Those components should be aware of the video status.  
+The video status consists of:
+
+```
+{
+	isPlaying: boolean
+}
+```
+
+The video player is made from 2 components:
+- VideoControl
+- VideoProgress
+
+- Video control consists of a play pause button. That button can cause the context `isPlaying` to toggle.
+- VideoProgress will create display in seconds the progress of the video. When the video is playing the counter will advance, when it's paused the counter will pause (continue from the same count when it continues).
+
+## EX Formik Custom Field
+
+In this ex you will create an autocomplete custom formik field.  
+You field will have a text input.  
+When the user types text, a request is sent to the server with the text he entered:
+
+```
+https://nztodo.herokuapp.com/api/tasks/?format=json&search=<what-the-user-typed>
+```
+
+According to what the server returned there will be a list below the text input with the autocomplete results and the user should pick an item from a list.
+
+Each item the server returns:
+
+```
+{"id":9862,"title":"title","description":"desc","group":"45","when":"2019-09-07T18:27:32.960000Z"}
+```
+
+So your field should return an object to formik.
+

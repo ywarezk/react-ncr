@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 // import { NameForm } from './components/01-ControlledForm/NameForm';
 
-import { NameForm } from './components/02-UnControlledForm/NameForm';
-import { DogName } from './components/06-Formik/Login';
+// import { NameForm } from './components/02-UnControlledForm/NameForm';
+// import { DogName } from './components/06-Formik/Login';
+import { Login } from './components/07-ex-login/Login';
 
 function App() {
 	return (
@@ -13,7 +14,7 @@ function App() {
 				ControlledForm
 	  		</h1>
 
-			{/* <NameForm /> */}
+			{/* <NameForm ref={stamRef} /> */}
 
 			<h1>
 				UnControlledForm
@@ -25,7 +26,13 @@ function App() {
 				Formik
 			</h1>
 			
-			<DogName />
+			{/* <DogName /> */}
+			
+			<h1>
+				Login EX
+			</h1>
+			
+			<Login />
 		</div>
 	);
 }

@@ -1,3 +1,10 @@
+/**
+
+const stamRef = useRef(null)
+
+<FancyButton ref={stamRef} />
+ */
+
 import React, { ChangeEvent, FC, useState } from 'react';
 
 // controlled form
